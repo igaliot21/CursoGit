@@ -9,9 +9,9 @@
     //
     $con = mysql_connect("localhost",$user,$pass);
     if (!$con){
-        die('Error de db' . mysql_error());
+        die('Error de base de datos' . mysql_error());
     }
-    //
+    // 
     mysql_select_db("TestDB",$con);
     $recordset=mysql_query("SELECT * FROM TestTable WHERE Id=" . $key);    
 
